@@ -1,21 +1,19 @@
 const themes = {
     light: {
-        background: "#fff",
-        color: "dark grey"
+        background: "white",
+        color: "darkGrey"
     },
     dark: {
-        background: "#darkGrey",
-        color: "000000"
+        background: "darkGrey",
+        color: "ffffff"
     }
 }
 
 
 function changeCSSTheme(themeName) {
-    for (const theme in themes[themeName]) {
-        document.documentElement.style.setProperty(`--${theme}`, themes[themeName][theme])
-        console.log("Updated css variable", theme)
+    for (const variable in themes[themeName]) {
+        document.documentElement.style.setProperty(`--${variable}`, themes[themeName][variable])
+        console.log("Updated css variable", variable)
     }
 }
 
-
-changeCSSTheme("dark")
