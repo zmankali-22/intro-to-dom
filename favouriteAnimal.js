@@ -11,6 +11,8 @@ let animals = [
 ];
 
 function createAnimalList() {
+
+    animals = [...new Set(animals)];
     animals.forEach((animal) => {
         console.log("animal", animal)
         let newList = document.createElement("li")
