@@ -18,4 +18,4 @@ function changeCSSTheme(themeName) {
 }
 
 
-changeCSSTheme("light")
+changeCSSTheme("dark")
