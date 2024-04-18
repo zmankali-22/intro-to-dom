@@ -35,9 +35,10 @@ function createAnimalList() {
 
 
 function removeAnimalFromList(targetAnimalId) {
-    // !. find element in list with matching id
+    // !. find element in list with matching id and remove from ui
     let targetListItem = document.getElementById(targetAnimalId)
     targetListItem.remove()
+   
     // 2. check if id is in the array
     let isAnimalInList = animals.includes(targetAnimalId)
     if (!isAnimalInList) { 
@@ -52,6 +53,7 @@ function removeAnimalFromList(targetAnimalId) {
             return true
         }
     })
+    console.log("animals", animals)
 
     //  4. update or wipe and rebuild the animal lsit HTML
 }
