@@ -34,5 +34,10 @@ function toggleTheme() {
     let currentColor = getComputedStyle(document.documentElement).getPropertyValue("--background")
 
     console.log("Current background color is: " + currentColor)
+    if (currentColor === "white" ) {
+        setThemeToDark()
+    } else {
+        setThemeToLight()
+    }
 }
 
