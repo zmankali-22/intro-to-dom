@@ -17,5 +17,22 @@ function changeCSSTheme(themeName) {
     }
 }
 
+function setThemeToDark() {
+    
 
 changeCSSTheme("dark")
+}
+
+function setThemeToLight() {
+    
+
+    changeCSSTheme("light")
+    }
+  
+
+function toggleTheme() { 
+    let currentColor = getComputedStyle(document.documentElement).getPropertyValue("--background")
+
+    console.log("Current background color is: " + currentColor)
+}
+
